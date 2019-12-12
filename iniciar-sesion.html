@@ -1,26 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 
-<style>
-    body{
-        margin: 0;
-    }
-.header{
-    background-color:aquamarine;
-    height: 80px;
-    display: flex;
-}
-.header img{
-    height: 200px;
-}
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Muli', sans-serif;
+        }
 
+        .header {
+            background-color: #21c08b;
+            color: white;
+            display: flex;
+            height: 100px;
+            align-items: center;
+            justify-content: space-between;
+            top: 0px;
+        }
 
-</style>
+        .header img {
+            margin-left: 30px;
+            width: 200px;
+        }
+
+        .login{
+            background: linear-gradient(#21c08b,#ab88FF);
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            padding: 0px 30px;
+            min-height: calc(100vh - 200px);
+        }
+        .login__container{
+            background-color: rgba(255, 255, 255, 0.1);
+            border: 2px solid white;
+            border-radius: 40px;
+            padding: 60px 68px 40px;
+            color: white;
+            min-height: 700px;
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+        .login__container--form{
+            display: flex;
+            flex-direction: column;
+        }
+        .login__container--form label{
+            font-size: 14px;
+        }
+        .login__container--remember-me{
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+
+        .login__container--remember-me a{
+            font-size: 14px;
+            color: white;
+            text-decoration: none;
+        }
+        .login__container--remember-me a:hover{
+            text-decoration: underline;
+        }
+        .login__container--social-media > div{
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        .login__container--social-media > div > img{
+            width: 30px;
+            margin-right: 10px;
+        }
+        .login__container--register{
+            font-size: 14px;
+            
+        }
+        .login__container--register a{
+            font-size: 16px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-family: 'Muli', sans-serif;
+        }
+
+        .login__container--register a:hover{
+            text-decoration: underline;
+        }
+
+        .input{
+            background-color: transparent;
+            outline: none;
+            border-top: 0;
+            border-right: 0;
+            border-left: 0;
+            border-bottom: 1px solid white;
+            height: 40px;
+            font-family: 'Muli', sans-serif;
+            font-size: 16px;
+            margin-bottom: 20px;
+            padding: 0 20px;
+        }
+        .button{
+            background-color: rgba(255, 255, 255, 0.1);
+            height: 40px;
+            color: white;
+            border-radius: 60px;
+            border: none;
+            font-family: 'Muli', sans-serif;
+            cursor: pointer;
+            font-weight:bold;
+            letter-spacing: 1px;
+            margin:10px 0;
+        }
+        ::placeholder{
+            color: white;
+        }
+        .footer{
+            background-color:#ab88FF;
+            display: flex;
+            align-items: center;
+            height: 100px;
+            width: 100%;
+            justify-content: space-around;
+        }
+        .footer a{
+            font-size:14px;
+            color: white;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .footer a:hover{
+           text-decoration: underline;
+        }
+    </style>
 
 </head>
 
@@ -32,15 +153,15 @@
         <section class="login__container">
             <h2>Inicia sesión</h2>
             <form class="login__container--form">
-                <input class="input" type="text" placeholder="Correo">   
-                <input class="input" type="password" placeholder="Contraseña">  
-                <button class="button">Iniciar sesión</button> 
+                <input class="input" type="text" placeholder="Correo">
+                <input class="input" type="password" placeholder="Contraseña">
+                <button class="button">Iniciar sesión</button>
 
                 <div class="login__container--remember-me">
                     <label>
-                        <input class="" type="checkbox" id="cbox1" name="" value="checkboxx" >
+                        <input type="checkbox" id="cbox1" name="" value="checkboxx">Recuérdame
                     </label>
-                    <a href="#" >Olvidé mi contraseña</a>
+                    <a href="#">Olvidé mi contraseña</a>
                 </div>
             </form>
             <section class="login__container--social-media">
@@ -56,4 +177,5 @@
         <a href=""> Centro de ayuda </a>
     </footer>
 </body>
+
 </html>
