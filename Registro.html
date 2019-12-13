@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Muli', sans-serif;
+        }
+
+        .header {
+            background-color: #21c08b;
+            color: white;
+            display: flex;
+            height: 100px;
+            align-items: center;
+            justify-content: space-between;
+            top: 0px;
+        }
+
+        .header img {
+            margin-left: 30px;
+            width: 200px;
+        }
+
+        .register {
+            background: linear-gradient(#21c08b, #AF88FF);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: calc(100vh - 200px);
+        }
+
+        .register__container {
+            display: flex;
+            flex-direction: column;
+            min-height: 600px;
+            border: 2px solid white;
+            color: white;
+            border-radius: 40px;
+            padding: 40px 60px;
+            font-family: 'Muli', sans-serif;
+            width: 300px;
+            justify-content: space-around;
+        }
+        
+        .register__container--form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .input {
+            background: transparent;
+            color: white;
+            border: none;
+            border-bottom: 1px solid white;
+            height: 40px;
+            padding: 0 20px;
+            margin-bottom: 20px;
+            font-family: 'Muli', sans-serif;
+            font-size: 16px;
+            outline: none;
+
+        }
+        .button{
+            background:rgb(255, 255, 255,0.3);
+            height: 50px;
+            border-radius: 50px;
+            color: white;
+            font-family: 'Muli', sans-serif;
+            font-weight: bold;
+            letter-spacing: 1px;
+            border:none;
+        }
+        ::placeholder {
+            color: white;
+        }
+        .register__container--Iniciar-sesion a{
+            text-decoration: none;
+            color: white;
+            display: flex;
+            justify-content: center;
+        }
+        .footer{
+            background-color:#ab88FF;
+            display: flex;
+            align-items: center;
+            height: 100px;
+            width: 100%;
+            justify-content: left;
+        }
+        .footer a{
+            text-decoration: none;
+            color: white;
+            padding-right: 30px;
+            font-size: 14px;
+            padding-left: 30px;
+        }
+        .footer a:hover{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <img src="./imgs/logoplatzi.png" alt="logoPlatzi">
+    </header>
+    <section class="register">
+        <section class="register__container">
+            <h2>Registrate</h2>
+            <form class="register__container--form">
+                <input class="input" type="text" placeholder="Nombre">
+                <input class="input" type="text" placeholder="Correo">
+                <input class="input" type="text" placeholder="Contraseña">
+                <button class="button">
+                    Registrarme
+                </button>
+            </form>
+            <div class="register__container--Iniciar-sesion">
+                <a href=""> Iniciar Sesión</a>
+            </div>
+        </section>
+    </section>
+    <footer class="footer">
+        <a href=""> Terminos de uso </a>
+        <a href=""> Declaración de privacidad </a>
+        <a href=""> Centro de ayuda </a>
+    </footer>
+</body>
+
+</html>
