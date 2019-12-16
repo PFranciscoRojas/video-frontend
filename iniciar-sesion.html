@@ -30,63 +30,72 @@
             width: 200px;
         }
 
-        .login{
-            background: linear-gradient(#21c08b,#ab88FF);
+        .login {
+            background: linear-gradient(#21c08b, #ab88FF);
             display: flex;
             align-content: center;
             justify-content: center;
             padding: 0px 30px;
             min-height: calc(100vh - 200px);
         }
-        .login__container{
+
+        .login__container {
             background-color: rgba(255, 255, 255, 0.1);
             border: 2px solid white;
             border-radius: 40px;
             padding: 60px 68px 40px;
             color: white;
-            min-height: 700px;
+            min-height: 600px;
             width: 300px;
             display: flex;
             flex-direction: column;
             justify-content: space-around;
         }
-        .login__container--form{
+
+        .login__container--form {
             display: flex;
             flex-direction: column;
         }
-        .login__container--form label{
+
+        .login__container--form label {
             font-size: 14px;
         }
-        .login__container--remember-me{
+
+        .login__container--remember-me {
             color: white;
             display: flex;
             justify-content: space-between;
             margin-top: 10px;
         }
 
-        .login__container--remember-me a{
+        .login__container--remember-me a {
             font-size: 14px;
             color: white;
             text-decoration: none;
         }
-        .login__container--remember-me a:hover{
+
+        .login__container--remember-me a:hover {
             text-decoration: underline;
         }
-        .login__container--social-media > div{
+
+        .login__container--social-media>div {
             display: flex;
             align-items: center;
             font-size: 14px;
             margin-bottom: 10px;
         }
-        .login__container--social-media > div > img{
+
+        .login__container--social-media>div>img {
             width: 30px;
             margin-right: 10px;
         }
-        .login__container--register{
+
+        .login__container--register {
             font-size: 14px;
-            
+
         }
-        .login__container--register a{
+
+        .login__container--register a {
             font-size: 16px;
             text-decoration: none;
             color: white;
@@ -94,11 +103,11 @@
             font-family: 'Muli', sans-serif;
         }
 
-        .login__container--register a:hover{
+        .login__container--register a:hover {
             text-decoration: underline;
         }
 
-        .input{
+        .input {
             background-color: transparent;
             outline: none;
             border-top: 0;
@@ -111,7 +120,8 @@
             margin-bottom: 20px;
             padding: 0 20px;
         }
-        .button{
+
+        .button {
             background-color: rgba(255, 255, 255, 0.1);
             height: 40px;
             color: white;
@@ -119,30 +129,47 @@
             border: none;
             font-family: 'Muli', sans-serif;
             cursor: pointer;
-            font-weight:bold;
+            font-weight: bold;
             letter-spacing: 1px;
-            margin:10px 0;
+            margin: 10px 0;
         }
-        ::placeholder{
+
+        ::placeholder {
             color: white;
         }
-        .footer{
-            background-color:#ab88FF;
+
+        .footer {
+            background-color: #ab88FF;
             display: flex;
             align-items: center;
             height: 100px;
             width: 100%;
             justify-content: left;
         }
-        .footer a{
+
+        .footer a {
             text-decoration: none;
             color: white;
             padding-right: 30px;
             font-size: 14px;
             padding-left: 30px;
         }
-        .footer a:hover{
-           text-decoration: underline;
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .login__container {
+                background-color: transparent;
+                border: none;
+                padding: 0;
+                width: 100%;
+            }
+            .footer {
+                flex-direction: column;
+                align-items: flex-start;
+            }
         }
     </style>
 
