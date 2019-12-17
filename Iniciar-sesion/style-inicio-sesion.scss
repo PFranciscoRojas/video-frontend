@@ -1,0 +1,164 @@
+    $font: 'Muli', sans-serif ;
+    $flex-display: flex;
+    $colorStart: #21c08b ;
+    $colorEnd:  #8F57FD;
+    $transparencia: rgba(255, 255, 255, 0.1);
+    
+        body {
+            margin: 0;
+            font-family:  $font;
+        }
+
+        .header {
+            background-color: #21c08b;
+            color: white;
+            display: $flex-display;
+            height: 100px;
+            align-items: center;
+            justify-content: space-between;
+            top: 0px;
+        }
+
+        .header img {
+            margin-left: 30px;
+            width: 200px;
+        }
+
+        .login {
+            background: linear-gradient($colorStart, $colorEnd);
+            display: $flex-display;
+            align-content: center;
+            justify-content: center;
+            padding: 0px 30px;
+            min-height: calc(100vh - 200px);
+        }
+
+        .login__container {
+            background-color: $transparencia;
+            border: 2px solid white;
+            border-radius: 40px;
+            padding: 60px 68px 40px;
+            color: white;
+            min-height: 600px;
+            width: 300px;
+            display: $flex-display;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+        .login__container--form {
+            display: $flex-display;
+            flex-direction: column;
+        }
+
+        .login__container--form label {
+            font-size: 14px;
+        }
+
+        .login__container--remember-me {
+            color: white;
+            display: $flex-display;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+
+        .login__container--remember-me a {
+            font-size: 14px;
+            color: white;
+            text-decoration: none;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+
+
+        .login__container--social-media>div {
+            display: $flex-display;
+            align-items: center;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        .login__container--social-media>div>img {
+            width: 30px;
+            margin-right: 10px;
+        }
+
+        .login__container--register {
+            font-size: 14px;
+
+        }
+
+        .login__container--register a {
+            font-size: 16px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-family:  $font;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+        .input {
+            background-color: transparent;
+            outline: none;
+            border-top: 0;
+            border-right: 0;
+            border-left: 0;
+            border-bottom: 1px solid white;
+            height: 40px;
+            font-family:  $font;
+            font-size: 16px;
+            margin-bottom: 20px;
+            padding: 0 20px;
+        }
+
+        .button {
+            background-color: $transparencia;
+            height: 40px;
+            color: white;
+            border-radius: 60px;
+            border: none;
+            font-family:  $font;
+            cursor: pointer;
+            font-weight: bold;
+            letter-spacing: 1px;
+            margin: 10px 0;
+        }
+
+        ::placeholder {
+            color: white;
+        }
+
+        .footer {
+            background-color:$colorEnd;
+            display: $flex-display;
+            align-items: center;
+            height: 100px;
+            width: 100%;
+            justify-content: left;
+        }
+
+        .footer a {
+            text-decoration: none;
+            color: white;
+            padding-right: 30px;
+            font-size: 14px;
+            padding-left: 30px;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+
+        @media only screen and (max-width: 600px) {
+            .login__container {
+                background-color: transparent;
+                border: none;
+                padding: 0;
+                width: 100%;
+            }
+            .footer {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
